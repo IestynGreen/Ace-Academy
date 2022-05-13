@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+div, h1, h2, h3, h4, h5, h6, p, span, img, hr{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+#svgStuff{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url("assets/wavesNegative.svg");
+    background-size: 100% auto;
+}
+
+.stopScroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sideBar {
+    color: black;
+    position: static;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#titleSet{
+    font-size: 4em;
+    margin-right:auto;
+    margin-left: 10%;
+}
+
+#lastList{
+    margin-right: 5%;
+}
+
+a {
+    color: black;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.course{
+    margin-left: 5%;
+}
+
+.course:hover{
+    margin-left: 5%;
+    cursor: pointer;
+    color: salmon;
+}
+
+
+.courseVis:hover p{
+    color: var(--skinRed);
+    display: inline;
+}
+
+.courseText{
+
+    display: inline;
+}
+
+.courseVis{
+    cursor: pointer;
+}
+
+.course:hover .courseDropDown {
+    cursor: pointer;
+    visibility: visible;
+    position: relative;
+}
+
+.mainContent{
+    margin-top: 15vh;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    width: 60%;
+    background-color: white;
+    box-shadow: 10px 10px black;
+    border-radius: 10px;
+}
+
+.blob {
+    background-image: url("assets/blob.svg");
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+.titleBit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color:white;
+    height: 11vh;
+    width: 100%;
+    font-size: 2em;
+}
+
+.titleBit p{
+    margin-left: 2vw;
+}
+
+.main {
+    width: 100%;
+    min-height: 50vh;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+
+.mainLeft{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.main *{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.formClass {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+form h3 {
+    display: inline;
+    font-size: 1.2em;
+}
+
+form h2{
+    display: inline;
+}
+
+.inputThing{
+    font-size: 1.2rem;
+}
+
+.buttonPress{
+    border: 0;
+    margin-top: 1%;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(assets/blob.svg);
+    background-size: 100% auto;
+    border-radius: 10px;
+    color: white;
+}
+
+.buttonFile{
+    margin-top: 1%;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(assets/blob.svg);
+    background-size: 100% auto;
+    border-radius: 10px;
+    color: white;
+}
+
+::-webkit-file-upload-button{
+    font-size: 1rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.radioButtonsFlex label{
+    font-size: 1.2em;
+}
+
+.titleLable{
+    font-size: 1.2em
+}
+
+.inputThing {
+    font-size: 1rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.inputThing:focus{
+    outline: none;
+    border-bottom: 2px solid salmon;
+}
