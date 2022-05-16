@@ -495,7 +495,7 @@ function displayGrades($conn, $id){
                         <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
                         <div class="gradesRow">
                             <p class="assementValue">'; echo $quizName; echo'</p>
-                            <p class="percentageValue">'; echo $score; echo'</p>
+                            <p class="percentageValue">'; echo $score; echo'% </p>
                         </div>';
                     }
                 }
@@ -856,5 +856,53 @@ function showCoursePage($conn, $courseID, $courseName){
             </div>
         </div>
     </div>';
+}
+
+function showRecentQuiz($conn, $userId){
+
+    $count = 0;
+    $courses = array(0, 0, 0, 0);
+    if(courseCheck($conn, 1, $userId)){
+        $courses[0] = 1;
+    }
+    if(courseCheck($conn, 2, $userId)){
+        $courses[1] = 2;
+    }
+    if(courseCheck($conn, 3, $userId)){
+        $courses[2] = 3;
+    }
+    if(courseCheck($conn, 4, $userId)){
+        $courses[3] = 4;
+    }
+    
+    $sql = "SELECT * FROM quizList WHERE
+            courseID = '$courses[0]' OR
+            courseID = '$courses[1]' OR
+            courseID = '$courses[2]' OR
+            courseID = '$courses[3]' ORDER BY quizID desc";
+    $data = mysqli_query($conn, $sql);
+    if(mysqli_num_rows($data) > 0){
+        while(($row = mysqli_fetch_array($data)) && ($count <= 4)){
+            extract($row);
+            echo'
+            <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+            <div class="downLoadRow">
+                <div class="row"> 
+                    <div class="title">
+                        <img class="fileImg" src="Assets/test.png">
+                        <p class="fileName">'; echo $quizName; echo'</p>
+                    </div>
+                    <div class="meta">
+                        <div class="rowCourse">
+                            <p>'; echo getCourseName($conn, $courseID); echo'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ';
+            $count++;
+        }
+    }
+    
 }
 

@@ -40,7 +40,7 @@
             <div id="profile">
                 <div id="profileVis">
                     <!-- Add student name-->
-                    <p id="name">Oliver Dorrian</p>
+                    <p id="name"><?php echo $_SESSION["name"] ; ?> <?php echo $_SESSION["sname"] ; ?></p>
                     <p class="downArrow" style="margin-left: 1vh;">❯</p>                    
                 </div>
                 <div id="profileInvis">

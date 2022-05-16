@@ -139,81 +139,11 @@
                             <div class="name">
                                 <p>Name</p>
                             </div>
-                            <div class="author">
-                                <p>Author</p>
-                            </div>
                             <div class="coruseMark">
                                 <p>Course</p>
                             </div>
                         </div>
-                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                        <div class="downLoadRow">
-                            <div class="row"> 
-                                <div class="title">
-                                    <img class="fileImg" src="Assets/test.png">
-                                    <p class="fileName">Networking Test 3</p>
-                                </div>
-                                <div class="meta">
-                                    <div class="rowAuthor">
-                                        <p>Oliver Dorrian</p>
-                                    </div>
-                                    <div class="rowCourse">
-                                        <p>Web Dev</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                        <div class="downLoadRow">
-                            <div class="row"> 
-                                <div class="title">
-                                    <img class="fileImg" src="Assets/test.png">
-                                    <p class="fileName">Psychology Monthly Assessment</p>
-                                </div>
-                                <div class="meta">
-                                    <div class="rowAuthor">
-                                        <p>Sigmund Freud</p>
-                                    </div>
-                                    <div class="rowCourse">
-                                        <p>Psychology</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                        <div class="downLoadRow">
-                            <div class="row"> 
-                                <div class="title">
-                                    <img class="fileImg" src="Assets/test.png">
-                                    <p class="fileName">Banking In Practice</p>
-                                </div>
-                                <div class="meta">
-                                    <div class="rowAuthor">
-                                        <p>Tom Scott</p>
-                                    </div>
-                                    <div class="rowCourse">
-                                        <p>Banking</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                        <div class="downLoadRow">
-                            <div class="row"> 
-                                <div class="title">
-                                    <img class="fileImg" src="Assets/test.png">
-                                    <p class="fileName">Web Portfolio 2</p>
-                                </div>
-                                <div class="meta">
-                                    <div class="rowAuthor">
-                                        <p>Xander Baker</p>
-                                    </div>
-                                    <div class="rowCourse">
-                                        <p>Web Dev</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php showRecentQuiz($conn, $_SESSION["id"]); ?>
                 </div>                
             </div>
         </div>
