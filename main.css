@@ -91,6 +91,7 @@ body {
 }
 
 
+
 #topBarRight{
     width: 100%;
     display: flex;
@@ -285,6 +286,14 @@ body {
     width: 60%;
     margin-left: 28%;
     color: black;
+}
+
+#quickLinks a{
+    font-size: 1.5em;
+    color: black;
+}
+#quickLinks a:hover{
+    color: salmon;
 }
 
 #quickLinks h3{
