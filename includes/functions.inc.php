@@ -336,8 +336,9 @@ function displayPosts($conn, $courseId){
             $title = $row["title"];
             $content = $row["content"];
             $img = $row["imgName"];
+            $id = $row["id"];
             echo "
-            <div class='article' id='flexArticle'>
+            <div class='article' id='post$id'>
             <div class='articleInformation'>
                 <h3>$date</h3>
             </div>
@@ -498,229 +499,7 @@ function displayGrades($conn, $id){
     }
 }
 
-function displayGrade($conn, $id, $courseId){
-    if($courseId == 1){
-        echo '
-        <h4>Website Development</h4>
-            <div class="gradesContain">
-                <div class="generalInfomation bluePurple">
-                    <div class="averageCompletion">
-                        <p class="averageCompleteTitle">Average<br>Completion:</p>
-                        <div class="progressBarSmall">
-                            <div id="progressCircleSmall">
-                                <div class="circle">
-                                    <div class="inner">
-                                        <p>78%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quizTakenContainer">
-                        <p>Quizzes Taken: </p>
-                        <p class="spaceLeft">4</p>
-                    </div>
-                    <div class="topScoreContainer">
-                        <p>Top Score: </p>
-                        <p class="spaceLeft"> 88%</p>
-                    </div>
-                    <div class="quizzesLeftContainer">
-                        <p>Quizzes Left: </p>
-                        <p class="spaceLeft">5</p>
-                    </div>
-                </div>
-                <div class="gradesInformation">
-                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                    <div class="titleSection">
-                        <div class="assementTitle">
-                            <p>Assessment Title</p>
-                        </div>
-                        <div class="gradeTitle">
-                            <p>Grade</p>
-                        </div>
-                        <div class="rangeTitle">
-                            <p>Range</p>
-                        </div>
-                        <div class="percentageTitle">
-                            <p>Percentage</p>
-                        </div>
-                    </div>
-                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                    <div class="gradesSection">
-                        <div class="gradesRow">
-                            <p class="assementValue">Web Portfolio 1</p>
-                            <p class="gradeValue">77</p>
-                            <p class="rangeValue">0-120</p>
-                            <p class="percentageValue">64.1%</p>
-                        </div>
-                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                        <div class="gradesRow">
-                            <p class="assementValue">Week 4 Test</p>
-                            <p class="gradeValue">88</p>
-                            <p class="rangeValue">0-100</p>
-                            <p class="percentageValue">88%</p>
-                        </div>
-                        <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                        <div class="gradesRow">
-                            <p class="assementValue">Half Term Test</p>
-                            <p class="gradeValue">10</p>
-                            <p class="rangeValue">0-25</p>
-                            <p class="percentageValue">40%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        ';
-    }
-    if($courseId == 2){
-        echo '
-        <h4>Psychology</h4>
-            <div class="gradesContain">
-                <div class="generalInfomation jag">
-                    <div class="averageCompletion">
-                        <p class="averageCompleteTitle">Average<br>Completion:</p>
-                        <div class="progressBarSmall">
-                            <div id="progressCircleSmall">
-                                <div class="circle">
-                                    <div class="inner">
-                                        <p>78%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quizTakenContainer">
-                        <p>Quizzes Taken: </p>
-                        <p class="spaceLeft">1</p>
-                    </div>
-                    <div class="topScoreContainer">
-                        <p>Top Score: </p>
-                        <p class="spaceLeft"> 72.5%</p>
-                    </div>
-                    <div class="quizzesLeftContainer">
-                        <p>Quizzes Left: </p>
-                        <p class="spaceLeft">3</p>
-                    </div>
-                </div>
-                <div class="gradesInformation">
-                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                    <div class="titleSection">
-                        <div class="assementTitle">
-                            <p>Assessment Title</p>
-                        </div>
-                        <div class="gradeTitle">
-                            <p>Grade</p>
-                        </div>
-                        <div class="rangeTitle">
-                            <p>Range</p>
-                        </div>
-                        <div class="percentageTitle">
-                            <p>Percentage</p>
-                        </div>
-                    </div>
-                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                    <div class="gradesSection">
-                        <div class="gradesRow">
-                            <p class="assementValue">Standard Analysis Methods</p>
-                            <p class="gradeValue">51</p>
-                            <p class="rangeValue">0-70</p>
-                            <p class="percentageValue">72.8%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        ';
-    }
-    if($courseId == 4){
-        echo '
-        <h4>Banking</h4>
-    <div class="gradesContain">
-        <div class="generalInfomation wave">
-            <div class="averageCompletion">
-                <p class="averageCompleteTitle">Average<br>Completion:</p>
-                <div class="progressBarSmall">
-                    <div id="progressCircleSmall">
-                        <div class="circle">
-                            <div class="inner">
-                                <p>78%</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="quizTakenContainer">
-                <p>Quizzes Taken: </p>
-                <p class="spaceLeft">6</p>
-            </div>
-            <div class="topScoreContainer">
-                <p>Top Score: </p>
-                <p class="spaceLeft">92%</p>
-            </div>
-            <div class="quizzesLeftContainer">
-                <p>Quizzes Left: </p>
-                <p class="spaceLeft">1</p>
-            </div>
-        </div>
-        <div class="gradesInformation">
-            <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-            <div class="titleSection">
-                <div class="assementTitle">
-                    <p>Assessment Title</p>
-                </div>
-                <div class="gradeTitle">
-                    <p>Grade</p>
-                </div>
-                <div class="rangeTitle">
-                    <p>Range</p>
-                </div>
-                <div class="percentageTitle">
-                    <p>Percentage</p>
-                </div>
-            </div>
-            <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-            <div class="gradesSection">
-                <div class="gradesRow">
-                    <p class="assementValue">Loan Assessment Methods</p>
-                    <p class="gradeValue">92</p>
-                    <p class="rangeValue">0-100</p>
-                    <p class="percentageValue">92%</p>
-                </div>
-                <div class="gradesRow">
-                    <p class="assementValue">Compound Interest Calculations</p>
-                    <p class="gradeValue">74</p>
-                    <p class="rangeValue">0-100</p>
-                    <p class="percentageValue">74%</p>
-                </div>
-                <div class="gradesRow">
-                    <p class="assementValue">Basic Trading Patterns Analysis</p>
-                    <p class="gradeValue">89</p>
-                    <p class="rangeValue">0-100</p>
-                    <p class="percentageValue">89%</p>
-                </div>
-                <div class="gradesRow">
-                    <p class="assementValue">Advanced Trading Patterns Analysis</p>
-                    <p class="gradeValue">67</p>
-                    <p class="rangeValue">0-100</p>
-                    <p class="percentageValue">67%</p>
-                </div>
-                <div class="gradesRow">
-                    <p class="assementValue">Monthly Assessment</p>
-                    <p class="gradeValue">86</p>
-                    <p class="rangeValue">0-100</p>
-                    <p class="percentageValue">86.2%</p>
-                </div>
-                <div class="gradesRow">
-                    <p class="assementValue">Final Yearly Assessment</p>
-                    <p class="gradeValue">84</p>
-                    <p class="rangeValue">0-100</p>
-                    <p class="percentageValue">84%</p>
-                </div>
-            </div>
-        </div>
-    </div>
-        ';
-    }
-}
+
 
 function authoriseStudentsForm($conn) {
     $sql = "SELECT users.usersId AS studentId,
@@ -926,4 +705,19 @@ function getCourseGrade($conn, $userId, $courseID){
         </div>
     </div>    
     ';
+}
+
+function quickLinks($conn, $courseId){
+    $query = "SELECT * FROM posts WHERE courseId = '$courseId' ORDER BY id ASC";
+    $result = mysqli_query($conn, $query);
+    if(mysqli_num_rows($result) > 0){
+        echo"<div>";
+        while($row = mysqli_fetch_assoc($result)){
+            $title = $row["title"];
+            $id = $row["id"];
+            echo "
+            <a href='#post$id'>$title<a>";
+        }
+        echo"</div> ";
+    } 
 }

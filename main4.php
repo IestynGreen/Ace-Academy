@@ -77,6 +77,7 @@
             ?>
         </div>
         <div id="quickLinks">
+        <?php quickLinks($conn, 4); ?>
             <!-- This is where quick links should go!-->
             <!-- Needs some complex php for it tbh-->
         </div>
