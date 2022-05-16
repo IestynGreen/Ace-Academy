@@ -208,7 +208,7 @@ body {
 #rowOfCourses{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
 }
 
@@ -225,6 +225,7 @@ body {
     background-color: #3f3f3f;
     height: 20vh;
     width: 18vw;
+    margin-right: 3vh;
     padding: 1vh;
     display: flex;
     flex-direction: column;
@@ -322,12 +323,12 @@ body {
 }
 
 .circle {
+    color: black;
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
-    background-image: conic-gradient(#7f5af0 78%, rgb(0, 0, 0) 0);
 }
 
 .circle .inner {
@@ -351,7 +352,7 @@ body {
 #bottomSection{
     color: white;
     width: 95.5%;
-    margin-top: 7vh;
+    margin-top: 4vh;
     margin-left: 1.5vw;
     display: flex;
 }
@@ -588,7 +589,6 @@ body {
     margin-right: 2vh;
     border-radius: 10px;
     width: 30%;
-    height: 35vh;
     background-color: white;
     box-shadow: 10px 10px black;
 }
@@ -730,6 +730,7 @@ body {
     padding: 1vh;
     height: 20vh;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .averageCompletion{

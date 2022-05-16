@@ -121,15 +121,8 @@
                 <div id="progress">
                     <h1>Total Progress</h1>
                     <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
-                    <div class="progressBar">
-                        <div id="progressCircle">
-                            <div class="circle">
-                                <div class="inner">
-                                    <p>78%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php getCourseGrade($conn, $_SESSION["id"], 0) ?>
+
                 </div>
                 <div id="quizSection">
                     <h1>Quizzes</h1>

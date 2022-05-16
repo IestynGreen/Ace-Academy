@@ -147,6 +147,9 @@
                 </div>
             </div> 
         </div>
+        <div id="svgStuff">
+    
+        </div>
         <script src="settings.js"></script>     
     </body>
 </html>

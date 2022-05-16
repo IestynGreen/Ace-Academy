@@ -439,16 +439,9 @@ function displayGrades($conn, $id){
 
             echo'
             <div class="averageCompletion">
-                <p class="averageCompleteTitle">Average<br>Completion:</p>
-                <div class="progressBarSmall">
-                    <div id="progressCircleSmall">
-                        <div class="circle">
-                            <div class="inner">
-                                <p>78%</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="averageCompleteTitle">Average<br>Completion:</p>';
+                getCourseGrade($conn, $_SESSION["id"], $i);
+            echo '
             </div>
             <div class="quizTakenContainer">
                 <p>Quizzes Taken: </p>';
@@ -456,10 +449,6 @@ function displayGrades($conn, $id){
                 $data = mysqli_query($conn, $sql);
                 $done = mysqli_num_rows($data);
                 echo'<p class="spaceLeft">'; echo $done; echo '</p>
-            </div>
-            <div class="topScoreContainer">
-                <p>Top Score: </p>
-                <p class="spaceLeft"> 88%</p>
             </div>
             <div class="quizzesLeftContainer">
                 <p>Quizzes Left: </p>';
@@ -806,10 +795,9 @@ function showQuizzes($conn, $courseId){
         echo"
             <div class='quizBox'>";
             echo $boxDesign; echo "                    
-                        <h4>"; echo getCourseName($conn, $courseId); echo "</h4>
+                        <h4>"; echo $name; echo "</h4>
                     </div>
                     <div class='quizBoxBottom'>
-                        <p> $name </p>
                         <form method='post' action='quiztest.php?quizNum=".$ans."'>
                         <button type='submit' class='quizTry'>Attempt Quiz</button>
                         </form>
@@ -906,3 +894,36 @@ function showRecentQuiz($conn, $userId){
     
 }
 
+function getCourseGrade($conn, $userId, $courseID){
+    $overall = 0;
+    $mean=0;
+    if($courseID == 0){
+        $sql = "SELECT * FROM studentGrades WHERE studentID = $userId";
+    }
+    if($courseID > 0){
+        $sql = "SELECT * FROM studentGrades WHERE courseID = $courseID AND studentID = $userId";
+    }
+    $data = mysqli_query($conn, $sql);
+    $quizzesDone = mysqli_num_rows($data);
+    if(mysqli_num_rows($data) > 0){
+        while($row = mysqli_fetch_array($data)){
+            $score = $row["score"];
+            $overall = $overall + $score;
+        }
+    }
+    if($overall != 0){
+        $mean = $overall/$quizzesDone;
+    }
+
+    echo '
+    <div class="progressBar">
+        <div id="progressCircle">
+            <div style="background-image: conic-gradient(#7f5af0 ' . $mean . '%, rgb(0, 0, 0) 0);" class="circle">
+                <div class="inner">
+                    <p>' . $mean . '%</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    ';
+}

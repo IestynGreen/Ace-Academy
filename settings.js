@@ -12,8 +12,6 @@ function disableBodyScroll(){
     goToTop();
 }
 
-
-
 function enableBodyScroll(){
     const element = document.querySelector("#appBody");
     element.classList.remove("stopScroll");
@@ -21,6 +19,13 @@ function enableBodyScroll(){
   
 
 disableBodyScroll();
+courses.style.visibility = "hidden";
+courses.style.position = "absolute";
+password.style.visibility = "hidden";
+password.style.position = "absolute";
+content.style.position = "hidden";
+content.style.visibility = "absolute";
+
 // account appear
 document.getElementById("accountClick").addEventListener("click", function(){
     disableBodyScroll();
