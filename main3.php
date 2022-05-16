@@ -76,16 +76,11 @@
             }
             ?>
         </div>
-        <div id="quickLinks">
-        <?php quickLinks($conn, 3); ?>
-            <!-- This is where quick links should go!-->
-            <!-- Needs some complex php for it tbh-->
-        </div>
-        <!-- Depending on which course they selected this should load the mainpage content-->
-        <!-- just deleted the div for the previous courses posts, then run the fuction that fills them-->
-        <!-- This should be involked by -->
         <div id="space">
             <h1 class="titleStuff">Maths</h1>
+            <div id="quickLinks">
+                <?php quickLinks($conn, 3); ?>
+            </div>
             <?php showCoursePage($conn, 3, 'Maths');?>
         </div>        
         <script src="scripts.js"></script>
