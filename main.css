@@ -290,6 +290,7 @@ body {
 
 #quickLinks a{
     font-size: 1.5em;
+    margin-right: 1em;
     color: black;
 }
 #quickLinks a:hover{

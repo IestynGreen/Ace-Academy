@@ -149,7 +149,7 @@
 
         <div id="calendarBig">
             <div id="callenderContainer">
-                <iframe src="https://calendar.google.com/calendar/embed?src=dpqj0f4137m5brcrar1jn1vs64%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&mode=WEEK&src=aGo1Y25yczZoN2w4Y3VuZHQ2dDF1dWR2bjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
 

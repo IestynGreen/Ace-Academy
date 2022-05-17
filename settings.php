@@ -121,6 +121,9 @@
                 </form>
             </div> 
         </div>
+        <div class="svgStuff">
+    
+        </div>
         <script src="settingsStudent.js"></script>
     </body>
 </html>
