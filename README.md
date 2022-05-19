@@ -13,6 +13,15 @@ _Ace-Academy is a learning environment that allows tutor created content, quizze
 * A Timetable, with editable Content
 * A professional design apporach
 
+# 🗺️ Navigation 🗺️
+* [Required Set-Up](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#-how-to-host-the-website-)
+* [Landing Page](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#landing-page)
+* [Dashboard/Student Home](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#dashboardhome-page)
+* [Learning Enviroment](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#learning-enviroment)
+* [Student Settings](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#student-settings)
+* [Tutor Settings](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#tutor-settings)
+* [Quiz Creation](https://github.com/OliverDorrian/Ace-Academy/edit/main/README.md#creating-a-quiz)
+
 # 🚧 How To Host The Website 🚧
 
 Firstly, this project needs to be hosted on Local Host, specifically, port 80. Therefore, hosting software is required, but only certain methods will be compatible to the project that has been built. The recommended hosting software is XAMPP.
@@ -46,7 +55,7 @@ This server being active will allow you to run a key command before accessing th
 This will allow you to enter the website by entering: http://localhost/' + Insert Un-Zipped File Name Here + '/index.php
 
 # ❗ Webite Content ❗
-## Landing Page
+## ✈️ Landing Page ✈️
 ### Inital View-Port
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169317517-b858bfd7-5504-46f1-856e-cace8f1136fb.png">
 
@@ -63,7 +72,7 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 
 <img width="1267" alt="image" src="https://user-images.githubusercontent.com/64540871/169319028-d0dc2936-5e80-4b29-ab3a-fd9cd509c93c.png">
 
-## Dashboard/Home Page
+## ▶️ Dashboard/Home Page ▶️ 
 ### Overview
 
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169319378-64d226e9-f510-4271-87e3-fa7ac2386825.png">
@@ -81,7 +90,7 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169322469-04e992ce-ac5d-4812-bbb6-f3b3b74b928d.png">
 
-## Learning Enviroment
+## 📖 Learning Enviroment 📖 
 ### Website Development 
 
 <img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169322825-688196f8-eaaf-4c9c-a4a4-3dadf7880bcb.png">
@@ -91,7 +100,7 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 
 <img width="1277" alt="image" src="https://user-images.githubusercontent.com/64540871/169322933-565172aa-1aff-447c-815e-96dce52962f8.png">
 
-## Student Settings
+## ⚙️ Student Settings ⚙️ 
 ### Account
 
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169324836-5b88a682-7868-4d10-becb-bc898282074d.png">
@@ -100,7 +109,7 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 
 <img width="1278" alt="image" src="https://user-images.githubusercontent.com/64540871/169324978-822bb684-ed3b-41fd-a40f-e16373036d2e.png">
 
-## Tutor Settings
+## 🧑‍🏫 Tutor Settings 🧑‍🏫
 ### Upload Files
 
 <img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169325172-d0336c15-9a2a-4f4b-8ec4-13bd450b7dbe.png">
@@ -109,7 +118,7 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 
 <img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169325291-b19a853c-7e86-47ac-a070-fcc926484984.png">
 
-### Create Quizzes
+## Creating A Quiz
 #### Name Quiz And Select Course
 
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169325449-8757aa43-8493-423b-bbb8-1796a6935ed3.png">
