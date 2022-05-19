@@ -27,7 +27,7 @@
         <meta name="robots" content="noindex, nofollow">
 
         <title>Settings</title>
-        <link rel="stylesheet" href="settings.css">
+        <link rel="stylesheet" href="styling/settings.css">
         <link rel="icon" href="assets/favicon.svg">
     </head>
     <body id="appBody">

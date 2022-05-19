@@ -633,52 +633,52 @@ body {
 }
 
 .bluePurple {
-    background-image: url("assets/webQuiz1.svg");
+    background-image: url("Assets/quizWeb1.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0;
 }
 
 .bluePurple-no-border {
-    background-image: url("assets/webQuiz1.svg");
+    background-image: url("Assets/webQuiz1.svg");
     background-size: cover;
 }
 
 .wave {
-    background-image: url("assets/wave.svg");
+    background-image: url("Assets/wave.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
 }
 
 .wave-no-border{
-    background-image: url("assets/wave.svg");
+    background-image: url("Assets/wave.svg");
     background-size: cover;
 }
 
 .circleBack{
-    background-image: url("assets/circle.svg");
+    background-image: url("Assets/circle.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
 }
 
 .triangle {
-    background-image: url("assets/tri.svg");
+    background-image: url("Assets/tri.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
 }
 
 .triangle-no-border {
-    background-image: url("assets/tri.svg");
+    background-image: url("Assets\tri.svg");
     background-size: cover;
 }
 
 .jag {
-    background-image: url("assets/jag.svg");
+    background-image: url("Assets/jag.svg");
     background-size: cover;
     border-radius:  10px 10px 0 0; 
 }
 
 .jag-no-border{
-    background-image: url("assets/jag.svg");
+    background-image: url("Assets/jag.svg");
     background-size: cover;
 }
 

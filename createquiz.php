@@ -56,7 +56,7 @@ if(isset($_POST['finish'])) {
 <head>
     <meta charset="utf-8">
     <title>CREATE QUIZ</title>
-    <link rel="stylesheet" href="quizStart.css">
+    <link rel="stylesheet" href="styling/quizStart.css">
 </head>
 
 <body>

@@ -22,7 +22,7 @@
     <meta name="robots" content="noindex, nofollow">
     
     <title>TAKE QUIZ</title>
-    <link rel="stylesheet" href="quizTest.css">
+    <link rel="stylesheet" href="styling/quizTest.css">
 </head>
 <body>
 

@@ -20,7 +20,7 @@
         <meta name="audience" content="Everyone">
         <meta name="robots" content="index, follow">
         <title>Ace Academy</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styling/index.css">
         <link rel="icon" href="Assets/favicon.svg">
     </head>
     <body id="appBody">
@@ -127,18 +127,6 @@
         </div>
         <div id="articles">
             <div id="articleSplitCointain">
-                <div id="articleSplitCointainLeft">
-                    <img src="Assets/stairs.jpg">
-                    <div id="fakeArticle">
-                        <h1>
-                            Learning at different levels
-                        </h1>
-                        <h2>
-                            The consequences of a more adaptive learning style can be revolutionary
-                            whilst understanding how to learn leads to better outcomes of individuals...
-                        </h2>
-                    </div>
-                </div>
                 <div id="articleSplitCointainRight">
 
                     <div id="articleSplitEqual">
@@ -162,114 +150,7 @@
                 </div>
             </div>
         </div>
-        <div id="blog">
-            <h1 id="blogTitle">Recent Posts</h1>
-            <hr style="width: 10%; margin-left: 6%;", size="7", color=#FA6B75>
-            <div id="listOfBlogs">
-                <div class="blogBox">
-                    <img class="blogImg" src="Assets/classRoom.jpg">
-                    <div class="blogTextArea"> 
-                        <h1>The Compromise Between Overcrowding And Education For All</h1>
-                        <hr style="width: 90%; margin-left: 5%;", size="0.5", color=#ADADAD>
-                        <div class="blogInfo">
-                            <div class="blogInfoLeft">
-                                <h3> 56 </h3>
-                                <img src="Assets/show.png">
-                            </div>
-                            <div class="blogInfoLeft">
-                                <h3> 11 </h3>
-                                <img src="Assets/chat.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogBox">
-                    <img class="blogImg" src="Assets/disctract.jpg">
-                    <div class="blogTextArea"> 
-                        <h1>Learning Environments For Distracted Learners</h1>
-                        <hr style="width: 90%; margin-left: 5%;", size="0.5", color=#ADADAD>
-                        <div class="blogInfo">
-                            <div class="blogInfoLeft">
-                                <h3> 72 </h3>
-                                <img src="Assets/show.png">
-                            </div>
-                            <div class="blogInfoLeft">
-                                <h3> 45 </h3>
-                                <img src="Assets/chat.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogBox">
-                    <img class="blogImg" src="Assets/book.jpg">
-                    <div class="blogTextArea"> 
-                        <h1>Links Between Early Reading And High Academic Achievement</h1>
-                        <hr style="width: 90%; margin-left: 5%;", size="0.5", color=#ADADAD>
-                        <div class="blogInfo">
-                            <div class="blogInfoLeft">
-                                <h3> 190 </h3>
-                                <img src="Assets/show.png">
-                            </div>
-                            <div class="blogInfoLeft">
-                                <h3> 21 </h3>
-                                <img src="Assets/chat.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogBox">
-                    <img class="blogImg" src="Assets/motter.jpg">
-                    <div class="blogTextArea"> 
-                        <h1>Motor Skills And Their Relationship With Brain development</h1>
-                        <hr style="width: 90%; margin-left: 5%;", size="0.5", color=#ADADAD>
-                        <div class="blogInfo">
-                            <div class="blogInfoLeft">
-                                <h3> 19 </h3>
-                                <img src="Assets/show.png">
-                            </div>
-                            <div class="blogInfoLeft">
-                                <h3> 4 </h3>
-                                <img src="Assets/chat.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogBox">
-                    <img class="blogImg" src="Assets/woman.jpg">
-                    <div class="blogTextArea"> 
-                        <h1>The Stepping Stones Of Getting More Women In Tech</h1>
-                        <hr style="width: 90%; margin-left: 5%;", size="0.5", color=#ADADAD>
-                        <div class="blogInfo">
-                            <div class="blogInfoLeft">
-                                <h3> 300 </h3>
-                                <img src="Assets/show.png">
-                            </div>
-                            <div class="blogInfoLeft">
-                                <h3> 40 </h3>
-                                <img src="Assets/chat.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogBox">
-                    <img class="blogImg" src="Assets/dog.jpg">
-                    <div class="blogTextArea"> 
-                        <h1>Emotional Support Animals, Fad Or First Choice Solution?</h1>
-                        <hr style="width: 90%; margin-left: 5%;", size="0.5", color=#ADADAD>
-                        <div class="blogInfo">
-                            <div class="blogInfoLeft">
-                                <h3> 760 </h3>
-                                <img src="Assets/show.png">
-                            </div>
-                            <div class="blogInfoLeft">
-                                <h3> 183 </h3>
-                                <img src="Assets/chat.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div id="contactUs">
             <div id="contactUsCenterBox">
                 <div id="contactUsTitleBox">
@@ -289,7 +170,7 @@
                     <img src="Assets/linkedin.png">
                 </div>
                 <div id="copyright">
-                    <h4>© 2023 By Ace Academy. Designed by NetWorms</h4>
+                    <h4>© 2022 By Ace Academy. Designed by NetWorms</h4>
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@
         <meta name="robots" content="noindex, nofollow">
         
         <title>Ace Academy</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styling/main.css">
         <link rel="icon" href="Assets/favicon.svg">
     </head>
     <body>

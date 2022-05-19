@@ -30,7 +30,7 @@ if(isset($_POST['finish'])) {
     <meta name="robots" content="noindex, nofollow">
     
     <title>Create Quiz</title>
-    <link rel="stylesheet" href="quizStart.css">
+    <link rel="stylesheet" href="styling/quizStart.css">
     <link rel="icon" href="assets/favicon.svg">
 </head>
 <body>

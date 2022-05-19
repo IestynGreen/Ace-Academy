@@ -14,7 +14,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Ace Academy</title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="styling/home.css">
         <link rel="icon" href="Assets/favicon.svg">
         
         <meta name="keywords" content="website, learning, education, content, quizzes, timetable, tutor, student">
