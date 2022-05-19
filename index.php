@@ -10,6 +10,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="keywords" content="website, learning, education, content, quizzes, timetable, tutor, student">
+        <meta name="author" content="Ace-Academy">
+        <meta name="publisher" content="Ace-Academy">
+        <meta name="copyright" content="Ace-Academy">
+        <meta name="description" content="Ace-Academy is a modern learning environment, including Quizzes, Timetables and Teacher-Driven Content">
+        <meta name="page-topic" content="Education">
+        <meta name="page-type" content="Learning">
+        <meta name="audience" content="Everyone">
+        <meta name="robots" content="index, follow">
         <title>Ace Academy</title>
         <link rel="stylesheet" href="index.css">
         <link rel="icon" href="Assets/favicon.svg">
