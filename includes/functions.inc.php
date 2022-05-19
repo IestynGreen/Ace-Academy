@@ -425,7 +425,7 @@ function displayGrades($conn, $id){
                 echo'<div class="generalInfomation wave">';
             }
             if($i == 4){
-                echo'<div class="generalInfomation wave">';
+                echo'<div class="generalInfomation triangle">';
             }
 
             echo'
@@ -466,10 +466,10 @@ function displayGrades($conn, $id){
                 while($row = mysqli_fetch_assoc($data)){
                     $score = $row["score"];
                     $quizId = $row["quizID"];
-                    $sql = "SELECT * FROM quizList WHERE quizID ='$quizId'";
-                    $data = mysqli_query($conn, $sql);
-                    if (mysqli_num_rows($data) > 0) {
-                        $row = mysqli_fetch_array($data);
+                    $sql2 = "SELECT * FROM quizList WHERE quizID ='$quizId'";
+                    $data2 = mysqli_query($conn, $sql2);
+                    if (mysqli_num_rows($data2) > 0) {
+                        $row = mysqli_fetch_array($data2);
                         $quizName = $row["quizName"];
                         echo'
                         <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
