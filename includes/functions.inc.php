@@ -1,47 +1,39 @@
 <?php
 
 function emptyInputSignup($name, $sname, $email, $pwd, $pwdRepeat){
-    $result;
     if (empty($name) || empty($sname) || empty($email) || empty($pwd) || empty($pwdRepeat)) {
-        $result = true;
+        return true;
     }
     else{
-        $result = false;
+        return false;
     }
-    return $result;
 }
 
 function invalidUid($username){
-    $result;
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        $result = true;
+        return true;
     }
     else{
-        $result = false;
+        return false;
     }
-    return $result;
 }
 
 function invalidEmail($email){
-    $result;
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $result = true;
+        return true;
     }
     else{
-        $result = false;
+        return false;
     }
-    return $result;
 }
 
 function pwdMatch($pwd, $pwdRepeat){
-    $result;
     if ($pwd !== $pwdRepeat) {
-        $result = true;
+       return true;
     }
     else{
-        $result = false;
+        return false;
     }
-    return $result;
 }
 
 function emailExists($conn, $email){
@@ -88,14 +80,12 @@ function createUser($conn, $name, $sname, $email, $pwd, $type){
 }
 
 function emptyInputLogin($username, $pwd){
-    $result;
     if (empty($username) || empty($pwd)) {
-        $result = true;
+        return true;
     }
     else{
-        $result = false;
+       return false;
     }
-    return $result;
 }
 
 function loginUser($conn, $email, $pwd) {
@@ -545,7 +535,7 @@ function authoriseStudentsForm($conn) {
                     AND courseId='$courseId'";
             if (mysqli_query($conn, $sql)) {
             }
-            else "Something went wrong: " . mysqli_error(mysqli_error($conn));
+            else "Something went wrong: " . mysqli_error($conn);
         }
     }
 

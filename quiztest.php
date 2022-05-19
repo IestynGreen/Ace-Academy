@@ -142,7 +142,7 @@
                 if ($count == 0) {
 
                     $query3 = "INSERT INTO studentGrades(score, quizID, courseID, studentID) values('$results','$quizNum', '$course', '$studentID')";
-                    mysqli_query($conn, $query3) or die(mysqli_error());
+                    mysqli_query($conn, $query3) or die(mysqli_error($conn));
                     echo '<script>alert(' . $results . ')</script>';
 
                 } else {

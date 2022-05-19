@@ -9,7 +9,7 @@ if(isset($_POST['finish'])) {
         $quizName = $_POST['quizName'];
         $courseID = $_POST['courses'];
         $query = "insert into quizlist(courseID, quizName) values ('$courseID', '$quizName')";
-        mysqli_query($conn, $query) or die(mysqli_error());
+        mysqli_query($conn, $query) or die(mysqli_error($conn));
         echo'<script> window.location.href = "createquiz.php";</script>';
     }
 }

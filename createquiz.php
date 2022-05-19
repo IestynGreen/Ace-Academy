@@ -19,7 +19,7 @@ if(isset($_POST['enter'])){
         $answer4 = $_POST['answer4'];
 
         $query = "insert into quizqa(QuizID, question, answer1, answer2, answer3, answer4) values('$maxID', '$question' , '$answer1', '$answer2', '$answer3', '$answer4')";
-        $run = mysqli_query($conn, $query) or die(mysqli_error());
+        $run = mysqli_query($conn, $query) or die(mysqli_error($conn));
         if($run){
             echo "Form submitted successfully";
         }
@@ -46,7 +46,7 @@ if(isset($_POST['finish'])) {
 
 
         $query = "insert into quizqa(QuizID, question, answer1, answer2, answer3, answer4) values('$maxID', '$question' , '$answer1', '$answer2', '$answer3', '$answer4')";
-        $run = mysqli_query($conn, $query) or die(mysqli_error());}
+        $run = mysqli_query($conn, $query) or die(mysqli_error($conn));}
     echo'<script> window.location.href = "tutorHome.php";</script>';
 }
 ?>
