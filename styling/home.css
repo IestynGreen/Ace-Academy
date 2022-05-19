@@ -667,7 +667,7 @@ body {
 }
 
 .triangle-no-border {
-    background-image: url("Assets\tri.svg");
+    background-image: url("Assets/tri.svg");
     background-size: cover;
 }
 
