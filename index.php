@@ -36,7 +36,7 @@
                 <input class="inputThing" type="text" name="email"></input>
                 <h2 class="Lable">Password</h2>
                 <input class="inputThing" type="password" name="pwd"></input>
-                <h2 id="forgotPassword">Forgot Password?</h2>
+                <a id="forgotPassword" href="policy.html">Privacy Policy</a>
                 <input class="buttonPress" type="submit" value="Login" name="submit"></input>
             </form>
             </div>
@@ -156,7 +156,7 @@
                 <div id="contactUsInput">
                     <h2 class="Lable">Email</h2>
                     <div id="inputRow">
-                        <input class="inputThing" type="text" id="contactInput"></input>
+                        <input class="inputThing2" type="text" id="contactInput"></input>
                         <button type="button" id="buttonStuff">Submit</button>
                     </div>
                 </div>

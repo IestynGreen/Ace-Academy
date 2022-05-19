@@ -594,3 +594,16 @@ body {
     font-size: 1.25em;
 }
 
+.inputThing2 {
+    font-size: 1em;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--blackGrey);
+    color: white;
+}
+
+
+.inputThing2:hover{
+    outline: none;
+    border-bottom: 2px solid var(--rubyRed);
+}
