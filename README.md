@@ -1,6 +1,6 @@
 # 📚 Ace-Academy: Learning Eviroment 📚
 
-_Ace-Acedemy is a learnining enviroment that allows tutor created content, quizzes and timetables; built on HTML, CSS, JS, PHP and SQL. Its development was based on meeting the needs of a University Project for web development. Worked on extensively, the project can be hosted locally using XAMPP_
+_Ace-Academy is a learning environment that allows tutor created content, quizzes, and timetables; built on HTML, CSS, JS, PHP, and SQL. Its development was based on meeting the needs of a University Project for web development. Worked on extensively, the project can be hosted locally using XAMPP_
 
 # 🚩 Major Features 🚩
 
@@ -8,9 +8,41 @@ _Ace-Acedemy is a learnining enviroment that allows tutor created content, quizz
 * Dashboard
 * Quizzes
 * Average Course Progress
-* SQL backend
-* Several Courses (Banking, Pscychology, WebDev, Maths)
-* Timetable, with editable Content
+* SQL Backend
+* Several Courses (Banking, Psychology, Website Development, Maths)
+* A Timetable, with editable Content
 * A professional design apporach
 
-# 💻 How To Host The Website 💻
+# 🚧 How To Host The Website 🚧
+
+Firstly, this project needs to be hosted on Local Host, specifically, port 80. Therefore, hosting software is required, but only certain methods will be compatible to the project that has been built. The recommended hosting software is XAMPP.
+# 📁 Step One : Download XAMPP 📁
+## (https://www.apachefriends.org/download.html)
+
+After downloading XAMPP, any version should be applicable, navigate to the folder you installed it in. This should be c://xampp, but other download locations will work.
+
+# 🔎 Step Two: Un-Zip The project 🔎
+
+Entering the xampp file, you should be greeted by a selection of folders, but the one that you require to host the website is: htdocs.
+<img width="602" alt="image" src="https://user-images.githubusercontent.com/64540871/169312002-35479b72-24d6-4c4e-926b-d64a75a20378.png">
+
+After finding the file, un-zip the folder here, it should end up looking like:
+
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/64540871/169311871-d639fa6a-c89f-4352-a545-231a7856de2f.png">
+
+# 💻 Step three: Opening The Project In A Browser 💻
+For this step you will need to do two things; Run a XAMPP server; and, run a database create function. For the first task, open up XAMMP: 
+
+<img width="334" alt="image" src="https://user-images.githubusercontent.com/64540871/169313043-a815d46b-605c-4ef6-b1fd-ba105ccbc98e.png">
+
+Then click run on both Apache and MySQL buttons, the results should look like this: 
+
+<img width="332" alt="image" src="https://user-images.githubusercontent.com/64540871/169313323-7f3ec14e-94c8-4bfb-9be6-e0631d9bcc88.png">
+
+This server being active will allow you to run a key command before accessing the website, 'databaseCreate.php'. This command is run by entering this string into a web broswer:  'http://localhost/' + Insert Un-Zipped File Name Here + '/createDatabase.php'. This should result in a screen like this:
+
+<img width="620" alt="image" src="https://user-images.githubusercontent.com/64540871/169314109-5014d810-afa1-46cd-96fd-bd53a7aa71a6.png">
+
+This will allow you to enter the website by entering: http://localhost/' + Insert Un-Zipped File Name Here + '/index.php
+
+# ❗ WebSite Content ❗
