@@ -13,4 +13,4 @@ _Ace-Acedemy is a learnining enviroment that allows tutor created content, quizz
 * Timetable, with editable Content
 * A professional design apporach
 
-# 💻 How To Host The WebSite 💻
+# 💻 How To Host The Website 💻
