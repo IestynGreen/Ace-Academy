@@ -60,8 +60,6 @@
             </div>
             <hr style="width: 90%; border-radius: 10px; margin-left: 5%; margin-bottom: 1vh; margin-top: 1vh;", size="1", color=grey>
             
-            <!-- This Should be conditional, only loading the stuff if needed, so if the person if subsrivved to the course -->
-
             <?php
             for($i=1; $i <= 4; $i++){
                 if (courseCheck($conn, $i, $_SESSION["id"])){

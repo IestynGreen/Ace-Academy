@@ -711,13 +711,11 @@ function quickLinks($conn, $courseId){
     $query = "SELECT * FROM posts WHERE courseId = '$courseId' ORDER BY id ASC";
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0){
-        echo"<div>";
         while($row = mysqli_fetch_assoc($result)){
             $title = $row["title"];
             $id = $row["id"];
             echo "
             <a href='#post$id'>$title<a>";
         }
-        echo"</div> ";
     } 
 }

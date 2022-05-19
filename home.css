@@ -149,7 +149,7 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    font-size: 1em;
+
     justify-content: flex-start;
     align-items: center;
 }
@@ -213,7 +213,7 @@ body {
 }
 
 .courseText:hover{
-    color:  rgb(190, 190, 190);
+    color:  salmon;
 }
 
 .coruseBox{
