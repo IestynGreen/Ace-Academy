@@ -1,4 +1,4 @@
-# 📚 Ace-Academy: Learning Eviroment 📚
+# 📚 Ace-Academy: Learning Environment 📚
 
 _Ace-Academy is a learning environment that allows tutor created content, quizzes, and timetables; built on HTML, CSS, JS, PHP, and SQL. Its development was based on meeting the needs of a University Project for web development. Worked on extensively, the project can be hosted locally using XAMPP_
 
