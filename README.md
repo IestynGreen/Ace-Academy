@@ -45,4 +45,45 @@ This server being active will allow you to run a key command before accessing th
 
 This will allow you to enter the website by entering: http://localhost/' + Insert Un-Zipped File Name Here + '/index.php
 
-# ❗ WebSite Content ❗
+# ❗ Webite Content ❗
+## Landing Page
+### Inital View Port
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169317517-b858bfd7-5504-46f1-856e-cace8f1136fb.png">
+
+### Second Section
+
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169317956-57a617ad-d3e4-467f-8083-c9654779efa3.png">
+
+### Final Section
+
+<img width="1267" alt="image" src="https://user-images.githubusercontent.com/64540871/169319028-d0dc2936-5e80-4b29-ab3a-fd9cd509c93c.png">
+
+
+## Dashboard/Home Page
+### Overview
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169319378-64d226e9-f510-4271-87e3-fa7ac2386825.png">
+
+### Quizzes
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169319619-ca2c5348-19af-4414-8a16-a0946350b79c.png">
+
+
+### Timetable
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169319721-2c55ede5-5024-4423-b825-9dcf36979f5d.png">
+
+### Grades 
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169322469-04e992ce-ac5d-4812-bbb6-f3b3b74b928d.png">
+
+## Learning Enviroment
+### Website Development 
+
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169322825-688196f8-eaaf-4c9c-a4a4-3dadf7880bcb.png">
+
+
+### Downloads Section
+
+<img width="1277" alt="image" src="https://user-images.githubusercontent.com/64540871/169322933-565172aa-1aff-447c-815e-96dce52962f8.png">
+
