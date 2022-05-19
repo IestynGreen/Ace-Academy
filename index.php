@@ -36,7 +36,7 @@
                 <input class="inputThing" type="text" name="email"></input>
                 <h2 class="Lable">Password</h2>
                 <input class="inputThing" type="password" name="pwd"></input>
-                <a id="forgotPassword" href="policy.html">Privacy Policy</a>
+                <a id="forgotPassword" href="policy.php">Privacy Policy</a>
                 <input class="buttonPress" type="submit" value="Login" name="submit"></input>
             </form>
             </div>
@@ -82,7 +82,7 @@
                     </label>                 
                 </div>
                 </span>
-                <a id="forgotPassword" href="policy.html">Privacy Policy</a>
+                <a id="forgotPassword" href="policy.php">Privacy Policy</a>
                 <input class="buttonPress" type="submit" value="Sign Up" name="submit"></input>
             </form>
             </div>
