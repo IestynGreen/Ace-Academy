@@ -55,7 +55,8 @@ if(isset($_POST['finish'])) {
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>CREATE QUIZ</title>
+    <title>Create Quiz</title>
+    <link rel="icon" href="styling/Assets/favicon.svg">
     <link rel="stylesheet" href="styling/quizStart.css">
 </head>
 

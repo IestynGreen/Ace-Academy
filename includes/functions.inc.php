@@ -132,11 +132,11 @@ function loginUser($conn, $email, $pwd) {
         $_SESSION["sname"] = $sname;
         $_SESSION["type"] = $type;
         if($type == "Student"){
-            header("location: ../studentHome.php");
+            header("location: ../home.php");
             exit();
         }
         if($type == "Tutor"){
-            header("location: ../tutorHome.php");
+            header("location: ../tutorSettings.php");
             exit();
         }
         
@@ -299,7 +299,7 @@ function uploadPost($conn) {
 		$pathInfo = pathinfo($fileName);
 		$extension = $pathInfo["extension"];
         if($extension !== "png" && $extension !== "PNG" && $extension !== "jpg" && $extension !== "JPEG" && $extension !== "bmp" && $extension !== "svg"){
-            header("location: ../tutorHome.php?error=incorrectimagetype");
+            header("location: ../tutorSettings.php?error=incorrectimagetype");
             exit();
         }
 		$upDate = date("Y-m-d H:i:s");
@@ -656,7 +656,7 @@ function showRecentQuiz($conn, $userId){
             <div class="downLoadRow">
                 <div class="row"> 
                     <div class="title">
-                        <img class="fileImg" src="Assets/test.png">
+                        <img class="fileImg" src="styling/Assets/test.png">
                         <p class="fileName">'; echo $quizName; echo'</p>
                     </div>
                     <div class="meta">

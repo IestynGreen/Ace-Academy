@@ -52,7 +52,7 @@
             </div>
             <div id="lastList" class="course">
                 <div class="courseVis">
-                    <a class="courseText" id="passwordClick" href="studentHome.php">Home</a>
+                    <a class="courseText" id="passwordClick" href="home.php">Home</a>
                 </div>
             </div>
         </div>
@@ -135,6 +135,6 @@
         <div class="svgStuff">
     
         </div>
-        <script src="settingsStudent.js"></script>
+        <script src="js/settingsStudent.js"></script>
     </body>
 </html>

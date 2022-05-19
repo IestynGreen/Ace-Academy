@@ -31,7 +31,7 @@ if(isset($_POST['finish'])) {
     
     <title>Create Quiz</title>
     <link rel="stylesheet" href="styling/quizStart.css">
-    <link rel="icon" href="assets/favicon.svg">
+    <link rel="icon" href="styling/Assets/favicon.svg">
 </head>
 <body>
     <div class="mainContent">

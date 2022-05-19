@@ -15,7 +15,7 @@
         <meta charset="UTF-8">
         <title>Ace Academy</title>
         <link rel="stylesheet" href="styling/home.css">
-        <link rel="icon" href="Assets/favicon.svg">
+        <link rel="icon" href="styling/Assets/favicon.svg">
         
         <meta name="keywords" content="website, learning, education, content, quizzes, timetable, tutor, student">
         <meta name="author" content="Ace-Academy">
@@ -35,43 +35,43 @@
             <div id="listOfLinks">
                 <div class="course">
                     <div class="courseVis" id="active">
-                        <img src="assets/home.svg">
+                        <img src="styling/Assets/home.svg">
                         <p id="homeClick">Overview</p>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
-                        <img src="assets/test.png">
+                        <img src="styling/Assets/test.png">
                         <p class="courseText" id="quizClick">Quizzes</p>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
-                        <img src="assets/timetable.png">
+                        <img src="styling/Assets/timetable.png">
                         <p class="courseText" id="timeClick">Timetable</p>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
-                        <img src="assets/online-course.png">
+                        <img src="styling/Assets/online-course.png">
                         <a href="main1.php" class="courseText">Courses</a>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
-                        <img src="assets/exam.png">
+                        <img src="styling/Assets/exam.png">
                         <p class="courseText" id="gradesClick">Grades</p>
                     </div>
                 </div>
                 <div class="course">
                     <div class="courseVis">
-                        <img src="assets/settings.png">
+                        <img src="styling/Assets/settings.png">
                         <a href="settings.php"><p class="courseText">Settings</p></a>
                     </div>
                 </div>
                 <div class="course account">
                     <div class="courseVis">
-                        <img src="assets/logout.png">
+                        <img src="styling/Assets/logout.png">
                         <a href="index.php"><p class="courseText">Log-out</p></a>
                     </div>
                 </div>
@@ -166,6 +166,6 @@
         <div id="gradesBig">
         <?php displayGrades($conn, $_SESSION["id"]); ?>
         </div>
-        <script src="home.js"></script>
+        <script src="js/home.js"></script>
     </body>
 </html>

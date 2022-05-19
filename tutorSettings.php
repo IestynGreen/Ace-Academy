@@ -28,7 +28,7 @@
         <meta name="robots" content="noindex, nofollow">
         
         <link rel="stylesheet" href="styling/settings.css">
-        <link rel="icon" href="assets/favicon.svg">
+        <link rel="icon" href="styling/Assets/favicon.svg">
     </head>
     <body id="appBody">
         <div id="sideBar">
@@ -161,6 +161,6 @@
         <div id="svgStuff">
     
         </div>
-        <script src="settings.js"></script>     
+        <script src="js/settings.js"></script>     
     </body>
 </html>

@@ -153,7 +153,7 @@
 
 
 
-        echo'<script>window.location = "studentHome.php"</script>';
+        echo'<script>window.location = "home.php"</script>';
     }
 
 

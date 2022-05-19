@@ -21,13 +21,10 @@
         <meta name="robots" content="index, follow">
         <title>Ace Academy</title>
         <link rel="stylesheet" href="styling/index.css">
-        <link rel="icon" href="Assets/favicon.svg">
+        <link rel="icon" href="styling/Assets/favicon.svg">
     </head>
     <body id="appBody">
-        <div id="letsChat">            
-            <img src="Assets/chat.png">
-            <h1>Let's Chat</h1>
-        </div>
+
         <div id="loginOverlay">
             <h1 id="xSymbol">✕</h1>
             
@@ -85,7 +82,7 @@
                     </label>                 
                 </div>
                 </span>
-                <h2 id="forgotPassword">Forgot Password?</h2>
+                <a id="forgotPassword" href="policy.html">Privacy Policy</a>
                 <input class="buttonPress" type="submit" value="Sign Up" name="submit"></input>
             </form>
             </div>
@@ -105,7 +102,7 @@
                     <h3 class="topBarLinksText">Partners</h3>
                     <h3 class="topBarLinksText">Contact Us</h3>
                     <div id="topBarLogin">
-                        <img alt="user" src="assets/user (1).png">
+                        <img alt="user" src="styling/Assets/user (1).png">
                         <h3>Login</h3>
                     </div>
                 </div>
@@ -128,7 +125,6 @@
         <div id="articles">
             <div id="articleSplitCointain">
                 <div id="articleSplitCointainRight">
-
                     <div id="articleSplitEqual">
                         <h1>About Us</h1>
                         <hr style="width: 30%; margin-right: 70%; border-radius: 10px;", size="4", color=#FA6B75>
@@ -165,15 +161,15 @@
                     </div>
                 </div>
                 <div id="socialImgs">
-                    <img src="Assets/twitter.png">
-                    <img src="Assets/facebook.png">
-                    <img src="Assets/linkedin.png">
+                    <img src="styling/Assets/twitter.png">
+                    <img src="styling/Assets/facebook.png">
+                    <img src="styling/Assets/linkedin.png">
                 </div>
                 <div id="copyright">
                     <h4>© 2022 By Ace Academy. Designed by NetWorms</h4>
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

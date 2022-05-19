@@ -43,7 +43,6 @@ document.getElementById("loginLoad").addEventListener("click", function(){
 });
 
 document.getElementById("topBarLogin").addEventListener("click", function(){
-    document.getElementById("letsChat").style.visibility = "hidden";
     document.getElementById("loginOverlay").style.visibility = "visible";
 
 

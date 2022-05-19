@@ -29,7 +29,7 @@
         
         <title>Ace Academy</title>
         <link rel="stylesheet" href="styling/main.css">
-        <link rel="icon" href="Assets/favicon.svg">
+        <link rel="icon" href="styling/Assets/favicon.svg">
     </head>
     <body>
         <div class="progress">
@@ -37,7 +37,7 @@
         <div id="topBar">
             <div id="topBarRight">
                 <div id="topBarLinks">
-                    <a href="studentHome.php" class="topBarLinksText">Home</a>
+                    <a href="home.php" class="topBarLinksText">Home</a>
                     <a href="index.php" class="topBarLinksText">Log-out</a>
                 </div>
             </div>
@@ -92,6 +92,6 @@
             </div>
             <?php showCoursePage($conn, 2, 'psych');?>
         </div>        
-        <script src="scripts.js"></script>
+        <script src="js/scripts.js"></script>
     </body> 
 </html> 

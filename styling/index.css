@@ -60,7 +60,6 @@ body {
 }
 
 
-
 #login{
     position: absolute;
 }
@@ -81,17 +80,16 @@ body {
 }
 
 .loginBox *{
-
     width: 100%;
 }
 
 .loginBox h1{
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .singUpText{
-    padding: 10%;
-    font-size: 0.7rem;
+    padding: 5%;
+    font-size: 1em;
 }
 
 #signUpLoad{
@@ -100,7 +98,8 @@ body {
 }
 
 .inputThing {
-    font-size: 1rem;
+    margin-bottom: 0.75em;
+    font-size: 1em;
     background: transparent;
     border: 0;
     border-bottom: 2px solid var(--blackGrey);
@@ -118,25 +117,31 @@ body {
     padding: 0;
 }
 
+
+
 #forgotPassword{
+    margin-right: auto;
+    color: white;
     text-decoration: underline;
-    margin-top: 10%;
-    font-size: 0.75rem;
-    text-align: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 1em;
     cursor: pointer;
 }
 
 .buttonPress {
+    font-size: 1.2em;
     cursor: pointer;
     height: 5vh;
-    margin: 3%;
+    width: 100%;
+    margin-top: 3%;
     border: 0; 
     background-color: var(--darkRed);
     color: white;
 }
 
 #loginContent {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 #xSymbol{
@@ -145,7 +150,7 @@ body {
     top: 4%;
     right: 5%; 
     width: 100%;
-    font-size: 2rem;
+    font-size: 2em;
     cursor: pointer;
 }
 
@@ -160,12 +165,9 @@ body {
     position: absolute;
 }
 
-#signUp h1 {
-    font-size: 2em;
-}
 
 #signUp h2 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .radioFlex {
@@ -182,7 +184,8 @@ body {
 }
 
 #typeSelect{
-    font-size: 1rem;
+    margin-bottom: 1em;
+    font-size: 1em;
     background: transparent;
     border: 0;
     border-bottom: 2px solid var(--blackGrey);
@@ -227,7 +230,7 @@ body {
 }
 
 #topBarTitle h1{
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #topBarRight{
@@ -246,6 +249,11 @@ body {
     align-content: space-between;
     justify-content: space-between;
     width: 100%;
+}
+
+.topBarLinksText:hover{
+    cursor: pointer;
+    color: salmon;
 }
 
 .topBarLinksText{
@@ -285,22 +293,22 @@ body {
 }
 
 #mainBodyIntro{
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #mainBodyTitle{
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: var(--skinRed);
 }
 
 #mainBodyCompText{
 
     padding: 1%;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #articles{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-color: var(--blue);
     color: white;
@@ -346,7 +354,7 @@ body {
 
 }
 #fakeArticle h1{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 5%;
 } 
 
@@ -354,20 +362,19 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
     opacity: 0.6;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 2% 0 2% 5%;
 }
 
 
 #articleSplitCointainRight{
     margin-top: 10%;
-    margin-left: 5%;
-    width: 40%;
+    width: 60%;
     height: 70%;
 }
 
 .aboutUsText{
-    font-size: 1.5rem;
+    font-size: 1.8em;
 }
 
 #articleSplitEqual{
@@ -387,7 +394,7 @@ body {
     margin-left: 6%;
     padding-top: 5%;
     color: var(--blackOfBlack);
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 #listOfBlogs{
@@ -436,7 +443,7 @@ body {
 
 .blogTextArea h1{
     padding: 4%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .blogInfo {
@@ -487,12 +494,12 @@ body {
 }
 
 #contactUsTitleBox  h1{
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 
 #contactUsTitleBox  h3{
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 #contactUsInput{
@@ -501,11 +508,11 @@ body {
 }
 
 #contactUsInput h2{
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #contactUsInput input{
-    font-size: 2rem;
+    font-size: 2em;
 } 
 #inputRow{
     display: flex;
@@ -584,6 +591,6 @@ body {
 }
 #letsChat h1{
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
