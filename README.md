@@ -10,3 +10,7 @@ _Ace-Acedemy is a learnining enviroment that allows tutor created content, quizz
 * Average Course Progress
 * SQL backend
 * Several Courses (Banking, Pscychology, WebDev, Maths)
+* Timetable, with editable Content
+* A professional design apporach
+
+# 💻 How To Host The WebSite 💻
