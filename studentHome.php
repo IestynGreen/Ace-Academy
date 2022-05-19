@@ -159,7 +159,8 @@
 
         <div id="calendarBig">
             <div id="callenderContainer">
-            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23616161&ctz=Europe%2FLondon&showTz=0&showCalendars=0&showTabs=1&showPrint=0&showDate=0&showNav=0&showTitle=0&src=aGo1Y25yczZoN2w4Y3VuZHQ2dDF1dWR2bjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>            </div>
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23616161&ctz=Europe%2FLondon&showNav=1&showDate=0&showPrint=0&showTabs=1&showCalendars=0&showTz=0&mode=WEEK&showTitle=0&src=aGo1Y25yczZoN2w4Y3VuZHQ2dDF1dWR2bjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>            
+            </div>
         </div>
 
         <div id="gradesBig">
