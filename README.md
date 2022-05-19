@@ -47,17 +47,21 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 
 # ❗ Webite Content ❗
 ## Landing Page
-### Inital View Port
+### Inital View-Port
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169317517-b858bfd7-5504-46f1-856e-cace8f1136fb.png">
 
-### Second Section
+### Login Section
+
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169324564-3c12dc47-d73e-4be1-8fcd-d5032c73c3c8.png">
+
+
+### About Us Section
 
 <img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169317956-57a617ad-d3e4-467f-8083-c9654779efa3.png">
 
-### Final Section
+### Contact Section
 
 <img width="1267" alt="image" src="https://user-images.githubusercontent.com/64540871/169319028-d0dc2936-5e80-4b29-ab3a-fd9cd509c93c.png">
-
 
 ## Dashboard/Home Page
 ### Overview
@@ -86,4 +90,32 @@ This will allow you to enter the website by entering: http://localhost/' + Inser
 ### Downloads Section
 
 <img width="1277" alt="image" src="https://user-images.githubusercontent.com/64540871/169322933-565172aa-1aff-447c-815e-96dce52962f8.png">
+
+## Student Settings
+### Account
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169324836-5b88a682-7868-4d10-becb-bc898282074d.png">
+
+### Courses
+
+<img width="1278" alt="image" src="https://user-images.githubusercontent.com/64540871/169324978-822bb684-ed3b-41fd-a40f-e16373036d2e.png">
+
+## Tutor Settings
+### Upload Files
+
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169325172-d0336c15-9a2a-4f4b-8ec4-13bd450b7dbe.png">
+
+### Upload Posts
+
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/64540871/169325291-b19a853c-7e86-47ac-a070-fcc926484984.png">
+
+### Create Quizzes
+#### Name Quiz And Select Course
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169325449-8757aa43-8493-423b-bbb8-1796a6935ed3.png">
+
+#### Add Questions
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/64540871/169325656-01ae416f-2f2e-4087-9e77-1161daec209d.png">
+
 
