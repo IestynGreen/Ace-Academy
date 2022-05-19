@@ -376,7 +376,7 @@ function displayResources($conn, $courseId){
             <div class='downLoadRow'>
                 <div class='row'> 
                     <div class='title'>
-                        <img class='fileImg' src='Assets/file.png'>
+                        <img class='fileImg' src='styling/Assets/file.png'>
                         <a href='uploads/$name' target='_blank'><p class='fileName'>$name</p></a>
                     </div>
                     <div class='meta'>

@@ -28,7 +28,7 @@
 
         <title>Settings</title>
         <link rel="stylesheet" href="styling/settings.css">
-        <link rel="icon" href="assets/favicon.svg">
+        <link rel="icon" href="styling/Assets/favicon.svg">
     </head>
     <body id="appBody">
         <div id="sideBar">
