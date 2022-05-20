@@ -39,9 +39,7 @@
             <?php authUsersForm($conn); ?>
         </div> 
     </div>
-    <div class="svgStuff">
-    
-    </div>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
