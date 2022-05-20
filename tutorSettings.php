@@ -11,6 +11,9 @@
     if($_SESSION["type"] == "Student"){
         header("location: home.php");
     }
+    if($_SESSION["type"] == "Admin"){
+        header("location: admin.php");
+    }
 
 
 ?>

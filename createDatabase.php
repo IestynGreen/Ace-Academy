@@ -27,7 +27,7 @@
     $hashedPwd = password_hash('Hello', PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO users(usersName, usersSname, usersEmail, usersPwd, userType, auth)
-        VALUES('Xander', 'Baker', 'xander@email.com', '$hashedPwd', 'Admin', 1)";
+        VALUES('Xander', 'Baker', 'admin@ace.com', '$hashedPwd', 'Admin', 1)";
 
     if(mysqli_query($conn, $sql)) echo "<p>User table populated.</p>";
     else die(mysqli_error($conn));

@@ -66,8 +66,8 @@ function createUser($conn, $name, $sname, $email, $pwd, $type){
     }
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT); //hashes the password
-
-    mysqli_stmt_bind_param($stmt, "ssssss", $name, $sname, $email, $hashedPwd, $type, 0); // ss refers to 2 strings, if 3 were used only 1 s would be used
+    $status = 0;
+    mysqli_stmt_bind_param($stmt, "ssssss", $name, $sname, $email, $hashedPwd, $type, $status); // ss refers to 2 strings, if 3 were used only 1 s would be used
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     
@@ -120,7 +120,7 @@ function loginUser($conn, $email, $pwd) {
         $_SESSION["name"] = $name;
         $_SESSION["sname"] = $sname;
         $_SESSION["type"] = $type;
-        $_SESSION["authorised"] = $auth;
+        $_SESSION["auth"] = $auth;
         if($type == "Student"){
             header("location: ../home.php");
             exit();

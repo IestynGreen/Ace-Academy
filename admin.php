@@ -2,6 +2,14 @@
     session_start();
     include("includes/functions.inc.php");
     include("includes/dbh.inc.php");
+
+    if($_SESSION["type"] == "Tutor"){
+        header("location: tutorSettings.php");
+    }
+
+    if($_SESSION["type"] == "Student"){
+        header("location: home.php");
+    }
 ?>
 
 <!doctype html>
