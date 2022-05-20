@@ -142,13 +142,5 @@
     if(mysqli_query($conn, $sql)) echo "<p>Table studentGrades created.</p>";
     else die(mysqli_error($conn));
 
-    $sql = "CREATE TABLE IF NOT EXISTS tutorAuth (
-        tutorID INT NOT NULL,
-        auth INT NOT NULL
-        )";
-    
-    if(mysqli_query($conn, $sql)) echo "<p>Table studentGrades created.</p>";
-    else die(mysqli_error($conn));
-
     mysqli_close($conn);
 ?>
