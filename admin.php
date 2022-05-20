@@ -26,7 +26,7 @@
         </div>
         <div id="lastList" class="course">
             <div class="courseVis">
-                <a class="courseText" id="passwordClick" href="home.php">Log-Out</a>
+                <a class="courseText" id="passwordClick" href="index.php">Log-Out</a>
             </div>
         </div>
     </div>

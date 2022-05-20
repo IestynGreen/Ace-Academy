@@ -182,7 +182,7 @@ function courseEnrol($conn, $enrolCourseId, $enrolUserId) {
 	$sql = "INSERT INTO studentsOnCourses
 			VALUES('$enrolUserId', '$enrolCourseId', '$enrolDate', '0')";
 	if (mysqli_query($conn, $sql)) {
-		echo "<p>You have successfully enrolled onto course ID $enrolCourseId.</p>";
+		echo "<p>You have been enrolled onto "; echo  getCourseName($conn, $enrolCourseId); echo "</p>";
 	}
 	else echo mysqli_error($conn);
 }
@@ -270,16 +270,13 @@ function uploadResource($conn) {
 
 			$sql = "INSERT INTO resources(name, extension, courseId, uploadDate, size, fname, sname)
 					VALUES('$fileName', '$extension', '$courseId', '$upDate', '$fileSize', '$fname', '$sname')";
-			if (mysqli_query($conn, $sql)) echo "<p style='color: green;'>Resource data successfully inserted into table.</p>";
-			else echo "<p style='red: green;'>Resource data failed to be inserted into table." . mysqli_error($conn) . "</p>";
+			if (mysqli_query($conn, $sql)) echo "<p style='color: green;'>Resource uploaded.</p>";
+			else echo "<p style='red: green;'>Resource upload failed." . mysqli_error($conn) . "</p>";
 
 
 			if ($fileName == "quiz.txt") {
 				header("Location:  show_quiz.php");
 			} 
-		}
-		else {
-			echo "<p style='color: red;'>File $fileName failed to upload.</p>";
 		}
 	}
 }
@@ -303,13 +300,13 @@ function uploadPost($conn) {
         $content = $_POST["content"];
 
 		if (move_uploaded_file($tmpName, "postImg/$fileName")) {
-			echo "<p style='color: green;'>File $fileName successfully uploaded.</p>";
+			echo "<p style='color: green;'> $fileName successfully uploaded.</p>";
 
 
 			$sql = "INSERT INTO posts(title, imgName, extension, courseId, content, uploadDate)
 					VALUES('$title', '$fileName', '$extension', '$courseId', '$content', '$upDate')";
-			if (mysqli_query($conn, $sql)) echo "<p style='color: green;'>Post successfully inserted into table.</p>";
-			else echo "<p style='red: green;'>Resource data failed to be inserted into table." . mysqli_error($conn) . "</p>";
+			if (mysqli_query($conn, $sql)) echo "<p style='color: green;'>Post has been added to course page.</p>";
+			else echo "<p style='red: green;'>Post has not been added to course page." . mysqli_error($conn) . "</p>";
 
 
 			if ($fileName == "quiz.txt") {
@@ -317,7 +314,7 @@ function uploadPost($conn) {
 			} 
 		}
 		else {
-			echo "<p style='color: red;'>File $fileName failed to upload.</p>";
+			echo "<p style='color: red;'>$fileName upload failed.</p>";
 		}
 	}
 }
