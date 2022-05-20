@@ -17,7 +17,8 @@
         usersSname VARCHAR(50) NOT NULL,
         usersEmail VARCHAR(100) NOT NULL,
         usersPwd VARCHAR(128) NOT NULL,
-        userType VARCHAR(10) NOT NULL
+        userType VARCHAR(10) NOT NULL,
+        auth INT NOT NULL
         )";
     
     if(mysqli_query($conn, $sql)) echo "<p>Table users created.</p>";
@@ -25,8 +26,8 @@
 
     $hashedPwd = password_hash('Hello', PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO users(usersName, usersSname, usersEmail, usersPwd, userType)
-        VALUES('Xander', 'Baker', 'xander@email.com', '$hashedPwd', 'Tutor')";
+    $sql = "INSERT INTO users(usersName, usersSname, usersEmail, usersPwd, userType, auth)
+        VALUES('Xander', 'Baker', 'xander@email.com', '$hashedPwd', 'Admin', 1)";
 
     if(mysqli_query($conn, $sql)) echo "<p>User table populated.</p>";
     else die(mysqli_error($conn));
@@ -136,6 +137,14 @@
         courseID INT NOT NULL,
         studentID INT NOT NULL
     
+        )";
+    
+    if(mysqli_query($conn, $sql)) echo "<p>Table studentGrades created.</p>";
+    else die(mysqli_error($conn));
+
+    $sql = "CREATE TABLE IF NOT EXISTS tutorAuth (
+        tutorID INT NOT NULL,
+        auth INT NOT NULL
         )";
     
     if(mysqli_query($conn, $sql)) echo "<p>Table studentGrades created.</p>";

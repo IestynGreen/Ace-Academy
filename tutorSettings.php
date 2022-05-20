@@ -5,6 +5,9 @@
     if(!isset($_SESSION["loggedIn"]) || isset($_SESSION["loggedIn"]) != 1){
         header("location: index.php?error=notloggedin");
     }
+    if($_SESSION["auth"] == 0){
+        header("location: index.php?error=notauthorised");
+    }
     if($_SESSION["type"] == "Student"){
         header("location: home.php");
     }

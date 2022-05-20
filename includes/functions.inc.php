@@ -58,7 +58,7 @@ function emailExists($conn, $email){
 
 //Function that creates a new user
 function createUser($conn, $name, $sname, $email, $pwd, $type){
-    $sql ="INSERT INTO users (usersName, usersSname, usersEmail, usersPwd, userType) VALUES (?, ?, ?, ?, ?);";
+    $sql ="INSERT INTO users (usersName, usersSname, usersEmail, usersPwd, userType, auth) VALUES (?, ?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../index.php?error=stmtfailed2");
@@ -67,7 +67,7 @@ function createUser($conn, $name, $sname, $email, $pwd, $type){
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT); //hashes the password
 
-    mysqli_stmt_bind_param($stmt, "sssss", $name, $sname, $email, $hashedPwd, $type); // ss refers to 2 strings, if 3 were used only 1 s would be used
+    mysqli_stmt_bind_param($stmt, "ssssss", $name, $sname, $email, $hashedPwd, $type, 0); // ss refers to 2 strings, if 3 were used only 1 s would be used
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     
@@ -113,18 +113,24 @@ function loginUser($conn, $email, $pwd) {
             $sname = $row["usersSname"];
             $uid = $row["usersId"];
             $type = $row["userType"];
+            $auth = $row["auth"];
         }
         $_SESSION["id"] = $id; 
         $_SESSION["loggedIn"] = 1;
         $_SESSION["name"] = $name;
         $_SESSION["sname"] = $sname;
         $_SESSION["type"] = $type;
+        $_SESSION["authorised"] = $auth;
         if($type == "Student"){
             header("location: ../home.php");
             exit();
         }
         if($type == "Tutor"){
             header("location: ../tutorSettings.php");
+            exit();
+        }
+        if($type == "Admin"){
+            header("location: ../admin.php");
             exit();
         }
         
@@ -493,6 +499,34 @@ function displayGrades($conn, $id){
     }
 }
 
+function authUsersForm($conn){
+    $sql = "SELECT * FROM users WHERE auth = 0";
+    $data = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($data) > 0) {
+        while ($row = mysqli_fetch_array($data)) {
+            extract($row);
+            echo "<p>".$usersName ." " . $usersSname. " </p>";
+            echo "<form style='margin-left 0; margin-top: 0;' method='post' action=''>";
+            echo "<input type='hidden' name='usersId' value='$usersId'/>";
+            echo "<input class='buttonPress' type='submit' value='Authorize'/>";
+            echo "</form>";
+            echo "<br/>";
+        
+        }
+    }
+}
+
+function authUsers($conn) {
+    if (isset($_POST["usersId"])) {
+        extract($_POST);
+        $sql = "UPDATE users
+                SET auth='1'
+                WHERE usersId='$usersId'";
+        if (mysqli_query($conn, $sql)) {
+        }
+        else "Something went wrong: " . mysqli_error($conn);
+    }
+}
 
 //Displays a list of students that are yet to be authorised
 function authoriseStudentsForm($conn) {
