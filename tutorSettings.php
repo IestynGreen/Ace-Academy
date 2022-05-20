@@ -6,7 +6,7 @@
         header("location: index.php?error=notloggedin");
     }
     if($_SESSION["type"] == "Student"){
-        header("location: studentHome.php");
+        header("location: home.php");
     }
 
 

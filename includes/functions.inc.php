@@ -1,5 +1,6 @@
 <?php
 
+//checks if the signup boxes are empty
 function emptyInputSignup($name, $sname, $email, $pwd, $pwdRepeat){
     if (empty($name) || empty($sname) || empty($email) || empty($pwd) || empty($pwdRepeat)) {
         return true;
@@ -9,15 +10,7 @@ function emptyInputSignup($name, $sname, $email, $pwd, $pwdRepeat){
     }
 }
 
-function invalidUid($username){
-    if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
+//checks if the email format is valid
 function invalidEmail($email){
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return true;
@@ -27,6 +20,7 @@ function invalidEmail($email){
     }
 }
 
+//checks that the entered passwords are matching
 function pwdMatch($pwd, $pwdRepeat){
     if ($pwd !== $pwdRepeat) {
        return true;
@@ -36,6 +30,7 @@ function pwdMatch($pwd, $pwdRepeat){
     }
 }
 
+//checks if an email has already been used by another user
 function emailExists($conn, $email){
     $sql ="SELECT * FROM users WHERE usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
@@ -44,7 +39,7 @@ function emailExists($conn, $email){
         exit();
     }
 
-    mysqli_stmt_bind_param($stmt, "s", $email); // ss refers to 2 strings, if 3 were used only 1 s would be used
+    mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
 
     $resultData = mysqli_stmt_get_result($stmt);
@@ -61,6 +56,7 @@ function emailExists($conn, $email){
 
 }
 
+//Function that creates a new user
 function createUser($conn, $name, $sname, $email, $pwd, $type){
     $sql ="INSERT INTO users (usersName, usersSname, usersEmail, usersPwd, userType) VALUES (?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
@@ -69,7 +65,7 @@ function createUser($conn, $name, $sname, $email, $pwd, $type){
         exit();
     }
 
-    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT); //hashes the password
 
     mysqli_stmt_bind_param($stmt, "sssss", $name, $sname, $email, $hashedPwd, $type); // ss refers to 2 strings, if 3 were used only 1 s would be used
     mysqli_stmt_execute($stmt);
@@ -79,6 +75,7 @@ function createUser($conn, $name, $sname, $email, $pwd, $type){
 
 }
 
+//checks if the input boxes are empty
 function emptyInputLogin($username, $pwd){
     if (empty($username) || empty($pwd)) {
         return true;
@@ -88,6 +85,7 @@ function emptyInputLogin($username, $pwd){
     }
 }
 
+//Function to log a user in
 function loginUser($conn, $email, $pwd) {
     $emailExists = emailExists($conn, $email);
 
@@ -135,6 +133,7 @@ function loginUser($conn, $email, $pwd) {
 
 }
 
+//function that gets a course name from its ID
 function getCourseName($conn, $id){
     $sql = "SELECT * FROM courses
             WHERE courseId = '$id'";
@@ -146,6 +145,7 @@ function getCourseName($conn, $id){
     }
 }
 
+//function that gets a course description from its ID
 function getCourseDesc($conn, $id){
     $sql = "SELECT * FROM courses
             WHERE courseId = '$id'";
@@ -157,6 +157,7 @@ function getCourseDesc($conn, $id){
     }
 }
 
+//checks if a student is authorised on a course using their ID and the course ID
 function isStudentAuth($conn, $userId, $courseId){
     $sql = "SELECT * FROM studentsOnCourses
             WHERE courseId = '$courseId' AND usersId=$userId";
@@ -168,9 +169,8 @@ function isStudentAuth($conn, $userId, $courseId){
     }
 }
 
+//enrols a student onto a course
 function courseEnrol($conn, $enrolCourseId, $enrolUserId) {
-	//$enrolCourseId = $_POST["enrolCourseId"];
-	//$enrolUserId = $_SESSION["id"];
 	$enrolDate = date("Y-m-d H:i:s");
 
 	$sql = "INSERT INTO studentsOnCourses
@@ -181,6 +181,7 @@ function courseEnrol($conn, $enrolCourseId, $enrolUserId) {
 	else echo mysqli_error($conn);
 }
 
+//checks if a student is on a course
 function courseCheck($conn, $courseId, $userId){
     $check = 0;
     $sql = "SELECT * FROM studentsOnCourses
@@ -194,11 +195,7 @@ function courseCheck($conn, $courseId, $userId){
     return $check;
 }
 
-function uploadFile($conn){
-    $file = $_FILES["file"];
-    $fileName = $file["name"];
-}
-
+//Function to change a users password
 function passwordChange($conn, $id, $currentPass, $newPass, $newPassRepeat){
     //$id = $_SESSION["id"];
     $sql = "SELECT * FROM users
@@ -225,6 +222,7 @@ function passwordChange($conn, $id, $currentPass, $newPass, $newPassRepeat){
 
 }
 
+//Function to change a users name
 function nameChange($conn, $id, $name, $sName){
     $sql = "SELECT * FROM users
             WHERE usersId='$id'";
@@ -246,7 +244,7 @@ function nameChange($conn, $id, $name, $sName){
 
 }
 
-
+//Function to upload a file to a course
 function uploadResource($conn) {
 	if (isset($_FILES["uploadFile"])) {
 		$file = $_FILES["uploadFile"];
@@ -280,6 +278,7 @@ function uploadResource($conn) {
 	}
 }
 
+//Function to upload a post to a course
 function uploadPost($conn) {
 	if (isset($_FILES["uploadImg"])) {
 		$file = $_FILES["uploadImg"];
@@ -317,6 +316,7 @@ function uploadPost($conn) {
 	}
 }
 
+//Displays all posts from a specific course
 function displayPosts($conn, $courseId){
     $query = "SELECT * FROM posts WHERE courseId = '$courseId' ORDER BY id ASC";
     $result = mysqli_query($conn, $query);
@@ -350,6 +350,7 @@ function displayPosts($conn, $courseId){
     } 
 }
 
+//Displays all resources for a specific course
 function displayResources($conn, $courseId){
     $query = "SELECT * FROM resources WHERE courseId = '$courseId' ORDER BY id ASC";
     $result = mysqli_query($conn, $query);
@@ -386,6 +387,7 @@ function displayResources($conn, $courseId){
     }
 }
 
+//Creates the quiz container
 function displayQuizContainer($conn, $id){
     for($i = 1; $i <= 4; $i++){
         if(courseCheck($conn, $i, $id)){
@@ -401,6 +403,7 @@ function displayQuizContainer($conn, $id){
     }
 }
 
+//Creates a quiz row
 function displayQuizRow($conn, $courseId){
     echo "
     <div class='rowOfQuizzes'>
@@ -409,6 +412,7 @@ function displayQuizRow($conn, $courseId){
 
 }
 
+//Displays the grades of a student on each of their courses
 function displayGrades($conn, $id){
     for($i = 1; $i <= 4; $i++){
         if(courseCheck($conn, $i, $id)){
@@ -490,7 +494,7 @@ function displayGrades($conn, $id){
 }
 
 
-
+//Displays a list of students that are yet to be authorised
 function authoriseStudentsForm($conn) {
     $sql = "SELECT users.usersId AS studentId,
                    users.usersName AS studentName,
@@ -525,21 +529,21 @@ function authoriseStudentsForm($conn) {
         }
     }
 
-
-    function authoriseStudents($conn) {
-        if (isset($_POST["courseId"]) && isset($_POST["studentId"])) {
-            extract($_POST);
-            $sql = "UPDATE studentsOnCourses
-                    SET authorised='1'
-                    WHERE usersId='$studentId'
-                    AND courseId='$courseId'";
-            if (mysqli_query($conn, $sql)) {
-            }
-            else "Something went wrong: " . mysqli_error($conn);
+//Function that processes student authorisation
+function authoriseStudents($conn) {
+    if (isset($_POST["courseId"]) && isset($_POST["studentId"])) {
+        extract($_POST);
+        $sql = "UPDATE studentsOnCourses
+                SET authorised='1'
+                WHERE usersId='$studentId'
+                AND courseId='$courseId'";
+        if (mysqli_query($conn, $sql)) {
         }
+        else "Something went wrong: " . mysqli_error($conn);
     }
+}
 
-
+//Function to display all quizzes on course
 function showQuizzes($conn, $courseId){
     $boxDesign="";
     if($courseId==1){
@@ -579,6 +583,7 @@ function showQuizzes($conn, $courseId){
     }
 }
 
+//Displays the course page
 function showCoursePage($conn, $courseID, $courseName){
     
     echo '            
@@ -615,6 +620,7 @@ function showCoursePage($conn, $courseID, $courseName){
     </div>';
 }
 
+//Shows a list of the most recent quizzes
 function showRecentQuiz($conn, $userId){
 
     $count = 0;
@@ -663,13 +669,14 @@ function showRecentQuiz($conn, $userId){
     
 }
 
+//Gets a students grades from all courses or a specific course
 function getCourseGrade($conn, $userId, $courseID){
     $overall = 0;
     $mean=0;
-    if($courseID == 0){
+    if($courseID == 0){ //For all courses
         $sql = "SELECT * FROM studentGrades WHERE studentID = $userId";
     }
-    if($courseID > 0){
+    if($courseID > 0){ //For a specific course
         $sql = "SELECT * FROM studentGrades WHERE courseID = $courseID AND studentID = $userId";
     }
     $data = mysqli_query($conn, $sql);
@@ -697,6 +704,7 @@ function getCourseGrade($conn, $userId, $courseID){
     ';
 }
 
+//Displays quick links for each post at the top of a course page
 function quickLinks($conn, $courseId){
     $query = "SELECT * FROM posts WHERE courseId = '$courseId' ORDER BY id ASC";
     $result = mysqli_query($conn, $query);

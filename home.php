@@ -6,7 +6,7 @@
         header("location: index.php?error=notloggedin");
     }
     if($_SESSION["type"] == "Tutor"){
-        header("location: tutorHome.php");
+        header("location: tutorSettings.php");
     }
 ?>
 
